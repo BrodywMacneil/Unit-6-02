@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Made in : November 2018
+// Made by: Brody MacNeil 
+// this program shows you your favourite day
+import Foundation
+
+show("Enter you favourite day of the week.")
+enum DayOfWeek : String {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+    case sunday
+    
+    var dayNumber: Int {
+        switch self {
+        case .sunday: return 1
+            case .monday: return 2
+            case .tuesday: return 3
+            case .wednesday: return 4
+            case .thursday: return 5
+            case .friday: return 6
+            case .saturday: return 7
+        }
+    }
+}
+if var input = DayOfWeek(rawValue: ask("Enter day").lowercased()){
+    show("Your favourite day is \(input)")
+    show("Its number is \(input.dayNumber)")
+} else {
+    show("Thats not a day of the week")
+}
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 836}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
